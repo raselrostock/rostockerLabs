@@ -1,0 +1,32 @@
+.rl-app{
+	margin:0 auto;
+	padding: 0;
+	max-width:1360px;
+	min-height:100vh;
+}
+.rl-app-content{
+	margin: 0 auto;
+	max-width:1360px;
+	height: 100%;;
+}
+.rl-header{
+	top:0;
+	width:100%;
+	background-color: #000000 !important;
+	height: 100px;
+	overflow:hidden;
+	font-size: 2.5rem;
+}
+
+.projects-grid{
+	display:flex;
+	justify-content: between;
+}
+.rl-wrapper{
+	left:0;
+	margin: 0;
+	padding: 0;
+	width:100%;
+	height:100%;
+	min-height:100%;
+}
