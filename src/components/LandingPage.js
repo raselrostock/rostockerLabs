@@ -9,7 +9,7 @@ class LandingPage extends Component{
           <div className='landing-content'>
     			     <div className='landing-page'>
     				      <Grid className='landing-grid'>
-    					       <Cell col={8}>
+    					       <Cell col={8}  tablet={8}>
                           <div className='landing-outer'>
                               <div className='landing-inner'>
                 						      <div id="particles-js">
@@ -92,11 +92,13 @@ class LandingPage extends Component{
                           </div>
     					       </Cell>
                      
-                     <Cell col={4}>
+                     <Cell col={4}  tablet={4}>
                           <div className="landing-typetext">
                               <Typist cursor={{show:true,blink: true,}}>
-                                <h2 className="heading-thistle-medium">hi. i'm maria.</h2>
-                                <h3 className="heading-thistle-medium">I am a <span>visual developer</span> and <span>problem solver</span>.</h3>
+                              <h2 className="heading-thistle-medium">Hello, my name is Md. Mostofa kamal.</h2><br/> 
+                              <h3><span class='fancy'> I am a <b>
+                              Full-Stack Web Developer</b><i class='fa fa-code color-3'></i>.</span><br/><span class='fancy'>Feel free to take a look at my portfolio section. </span>
+                              <br/><span class='fancy'>Also you can stop and say hello at raselrostock@yahoo.com..</span></h3>
                               </Typist>
                           </div>
                      </Cell>

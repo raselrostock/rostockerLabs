@@ -12,26 +12,110 @@
 	width: 100%;
 	background-color:$landingbg;
 }
+.landing-grid{
+	margin: 0;
+    padding-top:30px;
+    padding-bottom:30px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
 .landing-outer{
 	transform: perspective(600px) rotateY(15deg);
 	margin: auto;
 	width:600px;
 	height: 400px;
 	background:url('../../images/desktop.png') no-repeat center center;
-	border:1px solid red;
+	@media #{$tablet} {
+		margin: auto;
+		transform: perspective(460px) rotateY(8deg);
+		width:460px;
+		height: 320px;
+		background:url('../../images/tablet.png') no-repeat center center;
+	}
+	@media #{$mobile} {
+		margin: auto;
+		transform: perspective(300px) rotateY(8deg);
+		width:300px;
+		height: 220px;
+		background:url('../../images/mobile.png') no-repeat center center;
+	}
+	
 }
 .landing-inner{
 	margin-top: 50px;
     width: 460px;
     margin-left: 68px;
     height: 290px;
+    position:absolute;
+    @media #{$tablet} {
+    	width: 330px;
+	    margin-left: 64px;
+	    height: 198px;
+	    margin-top: 59px;
+	    position: absolute;
+    }
+    @media #{$mobile} {
+    	position: absolute;
+    	width: 215px;
+	    margin-left: 42px;
+	    height: 131px;
+	    margin-top: 42px;
+    }
+    
+
 }
 #particles-js div{
 	width:100%;
 	height:290px;
+	@media #{$tablet} {
+		width:100%;
+		height:198px;
+	}
+	@media #{$mobile} {
+		width:100%;
+		height:131px;
+	}
+	
 }
 
 //Typist
+.landing-typetext{
+	@media #{$tablet}{
+	margin: 25px auto;
+
+		h2{
+			font-size: 24px;
+			margin-bottom: 10px;
+			margin-left:15%;
+			line-height:1.0;
+		}
+		h3{
+			font-size: 18px;
+			margin-left:15%;
+			line-height:1.0;
+		}
+		.Typist .Cursor{
+			display:none;
+		}
+	}
+	@media #{$mobile}{
+	margin: 25px auto;
+	text-align:center;
+		h2{
+			font-size: 20px;
+			margin-bottom: 10px;
+		}
+		h3{
+			font-size: 14px;
+			margin: 0;
+		}
+	}
+	
+}
 .Typist .Cursor {
   display: inline-block;
   &--blinking {

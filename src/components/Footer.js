@@ -10,7 +10,7 @@ class Footer extends Component{
          					<p><span><Link to="/about">About Me</Link></span> | <span><Link to="/portfolio">Portfolio</Link></span></p>
             		</Cell>
                 <Cell col={4}>
-         					<p>© 2017 Maria D. Campbell</p>
+         					<p>© 2018 rostockerLabs</p>
             			</Cell>
             			<Cell col={4}>
          					<p>Design By <Link to="./">Md. Mostofa Kamal</Link></p>

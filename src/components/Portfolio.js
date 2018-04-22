@@ -30,22 +30,24 @@ class Portfolio extends Component{
 	}
 	render(){
 		return(
-			<div className='category-tabs'>
-				<Tabs activeTab={this.state.activeTab} onChange={(tabId)=>this.setState({activeTab:tabId})} ripple>
-					<Tab>React</Tab>
-					<Tab>Angular</Tab>
-					<Tab>Html</Tab>
-				</Tabs>
-				<section className='portfolios-grid'>
-					<Grid >
-						<Cell col={12}>
-							<div className='content'>
-								{this.toggleProjects()}
-							</div>
-						</Cell>
-					</Grid>
-					
-				</section>
+			<div className='rl-portfolio'>
+				<div className='category-tabs'>
+					<Tabs activeTab={this.state.activeTab} onChange={(tabId)=>this.setState({activeTab:tabId})} ripple>
+						<Tab>React</Tab>
+						<Tab>Angular</Tab>
+						<Tab>Html</Tab>
+					</Tabs>
+					<section className='portfolios-grid'>
+						<Grid >
+							<Cell col={12}>
+								<div className='content'>
+									{this.toggleProjects()}
+								</div>
+							</Cell>
+						</Grid>
+						
+					</section>
+				</div>
 			</div>
 		);
 	}
