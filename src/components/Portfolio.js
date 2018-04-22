@@ -32,9 +32,9 @@ class Portfolio extends Component{
 		return(
 			<div className='category-tabs'>
 				<Tabs activeTab={this.state.activeTab} onChange={(tabId)=>this.setState({activeTab:tabId})} ripple>
-				<Tab>React</Tab>
-				<Tab>Angular</Tab>
-				<Tab>Html</Tab>
+					<Tab>React</Tab>
+					<Tab>Angular</Tab>
+					<Tab>Html</Tab>
 				</Tabs>
 				<section className='portfolios-grid'>
 					<Grid >
@@ -47,7 +47,7 @@ class Portfolio extends Component{
 					
 				</section>
 			</div>
-			);
+		);
 	}
 }
 

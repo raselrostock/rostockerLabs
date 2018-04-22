@@ -1,9 +1,16 @@
+.landing-content{
+	margin: 0;
+	padding: 0;;
+	height: 100%;
+	width: 100%;
+	background-color:$landingbg;
+}
 .landing-page{
 	margin: 0;
 	padding: 0;;
 	height: 100%;
 	width: 100%;
-	background-color:red;
+	background-color:$landingbg;
 }
 .landing-outer{
 	transform: perspective(600px) rotateY(15deg);
@@ -22,4 +29,18 @@
 #particles-js div{
 	width:100%;
 	height:290px;
+}
+
+//Typist
+.Typist .Cursor {
+  display: inline-block;
+  &--blinking {
+    opacity: 1;
+    animation: blink 1s linear infinite;
+    @keyframes blink {
+      0% { opacity:1; }
+      50% { opacity:0; }
+      100% { opacity:1; }
+    }
+  }
 }

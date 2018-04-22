@@ -139,10 +139,12 @@ nav ul {
 /* Nav Styling > 900px wide */
 
 nav.top {
+    max-width:1360px;
     @media #{$min-901} {
+        position:fixed;
         display: block;
         top: 0;
-        max-width: 100%;
+        width: 100%;
         height: 100px;
         background: $Black;
         z-index: 4;
