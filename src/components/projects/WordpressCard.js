@@ -1,13 +1,12 @@
 import React, {Component} from 'react';
 import {Card, CardText, CardActions, CardMenu, CardTitle, Button, IconButton} from 'react-mdl';
-import des from '../../../images/desktop.png';
+
 class ReactCard extends Component{
 	render(){
 		return(
 			<div className='projects-grid'>
-
 				<Card className='project-card' shadow={5}>
-				    <CardTitle style={{color: '#fff', height: '176px', background:'url(${des})'}}>Welcome</CardTitle>
+				    <CardTitle style={{color: '#fff', height: '176px', background: 'url(http://www.getmdl.io/assets/demos/welcome_card.jpg) center / cover'}}>Welcome</CardTitle>
 				    <CardText>
 				        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 				        Mauris sagittis pellentesque lacus eleifend lacinia...

@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 import {Tabs, Tab, Grid, Cell, Card, CardText, CardActions, CardMenu, CardTitle, Button, IconButton} from 'react-mdl';
+import EthereumCard from './Projects/EthereumCard';
 import ReactCard from './Projects/ReactCard';
+import WordpressCard from './Projects/WordpressCard';
+import HtmlCard from './Projects/HtmlCard';
 class Portfolio extends Component{
 	constructor(props){
 		super(props);
@@ -12,19 +15,25 @@ class Portfolio extends Component{
 		if(this.state.activeTab === 0)
 		{
 			return(
-				<ReactCard />
+				<EthereumCard />
 				);
 		}
 		else if(this.state.activeTab === 1)
 		{
 			return(
-				<h1>Angular projects</h1>
+				<ReactCard />
 				);
 		}
 		else if(this.state.activeTab === 2)
 		{
 			return(
-				<h1>Html projects</h1>
+				<WordpressCard />
+				);
+		}
+		else if(this.state.activeTab === 3)
+		{
+			return(
+				<HtmlCard />
 				);
 		}
 	}
@@ -33,8 +42,9 @@ class Portfolio extends Component{
 			<div className='rl-portfolio'>
 				<div className='category-tabs'>
 					<Tabs activeTab={this.state.activeTab} onChange={(tabId)=>this.setState({activeTab:tabId})} ripple>
+						<Tab>Ethereum</Tab>
 						<Tab>React</Tab>
-						<Tab>Angular</Tab>
+						<Tab>Wordpress</Tab>
 						<Tab>Html</Tab>
 					</Tabs>
 					<section className='portfolios-grid'>

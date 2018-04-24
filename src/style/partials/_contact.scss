@@ -1,0 +1,102 @@
+.contact-body{
+    margin: 0;
+    padding:50px 5% 150px;
+    @media #{$tablet} {
+      padding:50px 10% 150px;
+    }
+    @media #{$mobile} {
+      padding:50px 5% 150px;
+    }
+    .mdl-grid{
+      padding:0;
+      @media #{$tablet} {
+      justify-content: center;
+      }
+      @media #{$mobile} {
+        justify-content: center;
+      }
+    }
+  }
+.contactform{
+  .form-control{
+    width:80%;
+    border:none;
+    outline:none;
+    color:black;
+    font-size: 18px;
+    border-bottom:1px solid gray;
+    margin-bottom: 16px;
+  }
+  input,input:focus{
+    height:45px;
+  }
+  input:-webkit-autofill {
+    border-bottom: 1px solid rgba(102, 175, 233, 0.6);
+  }
+
+  input:focus,
+  input:-webkit-autofill:focus {
+      border-bottom:1px solid rgba(102, 175, 233, 0.6);
+}
+  .submit{
+    background:Black;
+    border-color:transparent;
+    color:#fff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing:2px;
+    height: 50px;
+    margin-top:20px;
+    opacity: .8;
+    cursor:pointer;
+  }
+}
+.social-panel {
+  background-color: black;
+  opacity: .8;
+  width: 75%;
+  margin: auto;
+  border-radius: 10px;
+  @media #{$tablet} {
+    width: 100%;
+    }
+  @media #{$mobile} {
+      width: 100%;
+      margin-bottom: 50px;
+  }
+}
+.social-panel h1 {
+  font-size: 66px;
+  font-weight: bold;
+  color: white;
+}
+
+.social-panel hr {
+  border-top: 5px dotted white;
+  width: 50%;
+  margin: auto;
+}
+
+.social-panel p {
+  color: white;
+  font-size: 20px;
+  padding: 1em;
+}
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+  @media #{$tablet} {
+      width: 90%;
+  }
+  @media #{$mobile} {
+      width: 90%;
+  }
+}
+
+.social-links i {
+  color: white;
+  font-size: 5em;
+  padding: 8px;
+}

@@ -56,16 +56,41 @@ class About extends Component{
 
 				            <h2>Experience</h2>
 				            <Experience
-				              startYear={2009}
-				              endYear={2012}
-				              jobName="First Job"
-				              jobDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+				              jobstartYear="January 2015"
+				              jobendYear="March 2018"
+				              jobName="Front-End / Back-End Developer | Deutsche Wirtschafts Nachrichten"
+				              jobDescription="Responsible for the development work with React, PHP/MySQL, Laravel(PHP), HTML, CSS, JavaScript and GIT.
+				              				- Support and Maintenance for multiples Wordpress websites.
+											- Developing custom themes, plugins and new features within WordPress CMS environment
+											- Working with highly customize Leaky Paywall plugin
+											- Custom payment Gateway integration with wordpress"
 				            />
 				            <Experience
-				                startYear={2012}
-				                endYear={2016}
-				                jobName="Second Job"
-				                jobDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+				                jobstartYear="April 2013"
+				                jobendYear="December 2013"
+				                jobName="Software Developer ( Android ) | John Deere, Kaiserslautern"
+				                jobDescription="Developed the Android based application for the full-fulfillment of customer requirements as a member of a team"
+				            />
+				            <Experience
+				                jobstartYear="September 2012"
+				                jobendYear="March 2013"
+				                jobName="Software Developer | Fraunhofer IESE, Kaiserslautern"
+				                jobDescription="Engineering-style methods and techniques for the systematic development of Software-intensive systems, based on the customer project of Fraunhofer IESE, Kaiserslautern."
+				            />
+				            <Experience
+				                jobstartYear="February 2011"
+				                jobendYear="December 2011"
+				                jobName="Part- time Research | Chair of Business Informatics (Rostock University)"
+				                jobDescription="Implement and try out the SCIP framework which provides an application programming interface for applying Branch and Price solution methods to integer and mixed integer linear programming problems in C++."
+				            />
+				            <Experience
+				                jobstartYear="November 2007"
+				                jobendYear="September 2010"
+				                jobName="Software Engineer | Rise UP Labs"
+				                jobDescription="I was a Senior level web developer working with a development team on their internal and external web applications.
+				                 One of the main projects I was tasked with was creating a new web framework/CMS, that is being used to create the next version of 
+				                 their client facing web 
+												application. Most of the work was focused on in-house project."
 				            />
 				            <hr style={{borderTop: '3px solid #e22947'}} />
 				            
