@@ -7,7 +7,7 @@ import Services from './Services';
 import Contact from './Contact';
 
 const Main = () => (
-	<Switch>
+	<Switch basename={process.env.PUBLIC_URL}>
 		<Route exact path='/' component={LandingPage} />
 		<Route path='/about' component={About} />
 		<Route path='/portfolio' component={Portfolio} />

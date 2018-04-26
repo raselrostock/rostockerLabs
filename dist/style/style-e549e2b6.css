@@ -416,6 +416,16 @@ li div a, li div.active a {
       margin: 30px auto;
       z-index: 0 !important;
       width: 100%; } }
+  .project-card .project-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0; }
+  .project-card .project-tech {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 15px; }
   .project-card .project-links {
     display: flex;
     justify-content: space-between; }
@@ -544,4 +554,4 @@ li div a, li div.active a {
       align-items: center;
       text-align: center; }
 
-/*# sourceMappingURL=style-59e8f7bf.css.map*/
+/*# sourceMappingURL=style-e549e2b6.css.map*/
