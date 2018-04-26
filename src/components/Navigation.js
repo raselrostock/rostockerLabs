@@ -22,8 +22,6 @@ class Navigation extends Component{
 								<li><NavLink activeClassName='active' activeStyle={{
 								color: '#DF292D' }} exact to='/portfolio'>portfolio</NavLink></li>
 							<li><NavLink activeClassName='active' activeStyle={{
-								color: '#DF292D' }} exact to='/services'>services</NavLink></li>
-							<li><NavLink activeClassName='active' activeStyle={{
 								color: '#DF292D' }} exact to='/contact'>contact</NavLink></li>
 						</ul>
 					</nav>
@@ -34,10 +32,8 @@ class Navigation extends Component{
 								color: '#DF292D' }} exact to='/'>home</NavLink></li>
 							<li><NavLink activeClassName='active' activeStyle={{
 								color: '#DF292D' }} exact to='/about'>about</NavLink></li>
-								<li><NavLink activeClassName='active' activeStyle={{
+						    <li><NavLink activeClassName='active' activeStyle={{
 								color: '#DF292D' }} exact to='/portfolio'>portfolio</NavLink></li>
-							<li><NavLink activeClassName='active' activeStyle={{
-								color: '#DF292D' }} exact to='/services'>services</NavLink></li>
 							<li><NavLink activeClassName='active' activeStyle={{
 								color: '#DF292D' }} exact to='/contact'>contact</NavLink></li>
 						</ul>
