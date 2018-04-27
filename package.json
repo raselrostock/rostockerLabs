@@ -6,7 +6,8 @@
   "scripts": {
     "clean": "rimraf dist",
     "serve": "webpack-dev-server --config webpack-dev.config.js && TARGET_ENV=development",
-    "build": "npm run clean && webpack --config webpack-prod.config.js"
+    "build": "npm run clean && webpack --config webpack-prod.config.js",
+    "deploy": "npm run build && git subtree push --prefix dist origin gh-pages"
   },
   "repository": {
     "type": "git",
