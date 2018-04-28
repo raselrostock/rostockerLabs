@@ -26,7 +26,7 @@
   "bugs": {
     "url": "https://github.com/raselrostock/rostockerLabs/issues"
   },
-  "homepage": "https://github.com/raselrostock/rostockerLabs#readme",
+  "homepage": "https://raselrostock.github.io/rostockerLabs/",
   "dependencies": {
     "core-js": "^2.5.5",
     "highlight": "^0.2.4",

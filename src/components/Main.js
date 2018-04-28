@@ -5,14 +5,17 @@ import About from './About';
 import Portfolio from './Portfolio';
 import Services from './Services';
 import Contact from './Contact';
+import {HashRouter as Router, hashHistory} from 'react-router-dom';
 
 const Main = () => (
-	<Switch basename={process.env.PUBLIC_URL}>
-		<Route exact path='/' component={LandingPage} />
-		<Route path='/about' component={About} />
-		<Route path='/portfolio' component={Portfolio} />
-		<Route path='/services' component={Services} />
-		<Route path='/contact' component={Contact} />
-	</Switch>
+	<Router history={hashHistory}>
+		<Switch>
+			<Route exact path='/' component={LandingPage} />
+			<Route path='/about' component={About} />
+			<Route path='/portfolio' component={Portfolio} />
+			<Route path='/services' component={Services} />
+			<Route path='/contact' component={Contact} />
+		</Switch>
+	</Router>
 )
 export default Main;
