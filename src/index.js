@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {HashRouter as Router,hashHistory} from 'react-router-dom';
+import {HashRouter as Router} from 'react-router-dom';
 import App from './App';
 
 
@@ -11,7 +11,7 @@ import 'react-mdl/extra/material.js';
 import './style/style.scss';
 
 ReactDOM.render(
-				<Router history={hashHistory}>
+				<Router>
 					<App />
 				</Router>, 
 				document.getElementById('root')
