@@ -5,7 +5,6 @@ import About from './About';
 import Portfolio from './Portfolio';
 import Services from './Services';
 import Contact from './Contact';
-import {HashRouter as Router} from 'react-router-dom';
 
 const Main = () => (
 		<Switch>
