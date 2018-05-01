@@ -1,27 +1,19 @@
 .landing-content{
-	margin: 0;
-	padding: 0;;
-	height: 100%;
-	width: 100%;
-	background-color:$landingbg;
-}
-.landing-page{
-	margin: 0;
-	padding: 0;;
-	height: 100%;
-	width: 100%;
-	background-color:$landingbg;
-}
-.landing-grid{
-	margin: 0;
-    padding-top:30px;
-    padding-bottom:30px;
+    padding: 8% 5%;
+    height: 100%;
     width: 100%;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    position: absolute;
+    overflow: hidden;
+	background-color:$landingbg;
+	@media #{$tablet} {
+		padding: 10% 0%;
+	}
+	@media #{$mobile} {
+		padding: 10% 0%;
+	}
+}
+.row{
+	height: 100%;
+	margin: 0;
 }
 .landing-outer{
 	transform: perspective(600px) rotateY(15deg);
@@ -84,40 +76,26 @@
 
 //Typist
 .landing-typetext{
-	@media #{$tablet}{
-	margin: 25px auto;
-
-		h2{
-			font-size: 24px;
-			margin-bottom: 10px;
-			margin-left:15%;
-			line-height:1.0;
-		}
-		h3{
-			font-size: 18px;
-			margin-left:15%;
-			line-height:1.0;
-		}
-		.Typist .Cursor{
-			display:none;
-		}
+	margin-top: 30%;
+	@media #{$tablet} {
+		margin: 0 10% 25%;
 	}
-	@media #{$mobile}{
-	margin: 25px auto;
-	text-align:center;
-		h2{
-			font-size: 20px;
-			margin-bottom: 10px;
-		}
-		h3{
-			font-size: 14px;
-			margin: 0;
-		}
+	@media #{$mobile} {
+		margin: 0 5% 40%;
+	}
+	.fancy-heading{
+		 font-size: 22px;
+    	 line-height: 26px;
+	}
+	.fancy-text{
+		font-size: 18px;
+		line-height: 22px;
 	}
 	
 }
 .Typist .Cursor {
   display: inline-block;
+  font-size: 20px;
   &--blinking {
     opacity: 1;
     animation: blink 1s linear infinite;

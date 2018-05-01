@@ -457,6 +457,15 @@ li div a, li div.active a {
       .contact-body .mdl-grid {
         justify-content: center; } }
 
+.contactform .section-title h2 {
+  border: 1px solid red;
+  color: #232323;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 38px;
+  text-transform: uppercase; }
+
 .contactform .form-control {
   width: 80%;
   border: none;
@@ -554,4 +563,4 @@ li div a, li div.active a {
       align-items: center;
       text-align: center; }
 
-/*# sourceMappingURL=style-30f5fb87.css.map*/
+/*# sourceMappingURL=style-aafd56b3.css.map*/

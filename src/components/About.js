@@ -10,8 +10,8 @@ class About extends Component{
 	render(){
 		return(
 			<div className='rl-about'>
-				<Grid>
-					<Cell col={4}>
+				<div className='row'>
+    				<div className="col-md-4">
 						<div className='about-left'>
 							<div className='about-avatar'>
 								<img
@@ -35,8 +35,8 @@ class About extends Component{
 							  Your <strong>satisfaction</strong> Is my <strong>first priority</strong>.
 							 </p>
 						</div>
-					</Cell>
-					<Cell col={8}>
+					</div>
+    				<div className="col-md-8">
 						<div className='about-right'>
 							<h2>Education</h2>
 				            <Education
@@ -123,8 +123,8 @@ class About extends Component{
 				            
 				            
 						</div>
-					</Cell>
-				</Grid>
+					</div>
+				</div>
 			</div>
 
 		);

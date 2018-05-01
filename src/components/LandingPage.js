@@ -7,9 +7,8 @@ class LandingPage extends Component{
 	 render(){
 		  return(
           <div className='landing-content'>
-    			     <div className='landing-page'>
-    				      <Grid className='landing-grid'>
-    					       <Cell col={8}  tablet={8}>
+    				      <div className='row'>
+    					       <div className="col-md-8">
                           <div className='landing-outer'>
                               <div className='landing-inner'>
                 						      <div id="particles-js">
@@ -90,20 +89,21 @@ class LandingPage extends Component{
                           				</div> 
                               </div>
                           </div>
-    					       </Cell>
+                        
+    					       </div>
                      
-                     <Cell col={4}  tablet={4}>
+                     <div className="col-md-4">
                           <div className="landing-typetext">
                               <Typist cursor={{show:true,blink: true,}}>
-                              <h2 className="heading-thistle-medium">Hello, my name is Md. Mostofa kamal.</h2><br/> 
-                              <h3><span class='fancy'> I am a <b>
-                              Full-Stack Web Developer</b><i class='fa fa-code color-3'></i>.</span><br/><span class='fancy'>Feel free to take a look at my portfolio section. </span>
-                              <br/><span class='fancy'>Also you can stop and say hello at raselrostock@yahoo.com..</span></h3>
+                              <span className="fancy-heading"><b>Hello,</b><br/> my name is Mostofa kamal.</span><br/><br/><br/>
+                              <span className='fancy-text'> I am a <b>
+                              Full-Stack Web Developer</b><i class='fa fa-code color-3'></i>.</span><br/>
+                              <span className='fancy-text'>Feel free to take a look at my portfolio section. </span>
+                              <br/><span className='fancy-text'>Also you can stop and say hello at raselrostock@yahoo.com..</span>
                               </Typist>
                           </div>
-                     </Cell>
-    				    </Grid>
-    			     </div>
+                     </div>
+    				      </div>
           </div>
 			);
 	}
