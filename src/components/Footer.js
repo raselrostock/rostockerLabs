@@ -9,7 +9,12 @@ class Footer extends Component{
          					<p><span><Link to="/about">About Me</Link></span> | <span><Link to="/portfolio">Portfolio</Link></span></p>
             	</div>
                 <div className="col-md-4">
-         			<p>© 2018 rostockerLabs</p>
+                    <div className="copyright-section">
+             			<div class="single-point">
+                                <Link to="/">c</Link>
+                        </div>
+                        <span className="copyright-text">2018 rostockerLabs</span>
+                    </div>
                 </div>
             	<div className="col-md-4">
          			<p>Design By: <Link to="/">Md. Mostofa Kamal</Link></p>
