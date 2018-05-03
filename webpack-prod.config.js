@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const cssnano = require("cssnano");
 const htmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
@@ -104,8 +105,8 @@ module.exports = {
 		new webpack.HashedModuleIdsPlugin(),
 		new ExtractTextPlugin('style/style-[hash:8].css'),
 		new OptimizeCSSAssetsPlugin({
-			assetNameRegExp: /\.optimize\.css$/g,
-			cssProcessor: require('cssnano'),
+			assetNameRegExp: /\.minimize\.css$/g,
+			cssProcessor:cssnano,
 			cssProcessorOptions: { discardComments: {removeAll: true} },
 			canPrint: true
 		}),
